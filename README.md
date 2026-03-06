@@ -30,8 +30,9 @@ The model was rigorously tested using a separate test split to ensure generaliza
 
 ### Confusion Matrix
 The following matrix illustrates the model's ability to distinguish between classes:
-![Confusion Matrix](<img width="850" height="704" alt="image" src="https://github.com/user-attachments/assets/0f927043-81ff-428d-941e-e962049f4278" />
-)
+| Confusion Matrix |
+<img width="850" height="704" alt="image" src="https://github.com/user-attachments/assets/0f927043-81ff-428d-941e-e962049f4278" />
+
 
 ---
 
