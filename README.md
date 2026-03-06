@@ -18,7 +18,6 @@ This repository contains a deep learning-based **Fake News Detection System** de
 * **Model Library:** Hugging Face `transformers`
 * **Deep Learning:** PyTorch
 * **UI/Interface:** Streamlit
-* **Hardware:** Accelerated via NVIDIA GeForce GTX (CUDA) 📊
 
 ---
 
@@ -26,20 +25,19 @@ This repository contains a deep learning-based **Fake News Detection System** de
 The model was rigorously tested using a separate test split to ensure generalization.
 
 | Metric | Score |
-| :--- | :--- |
-| **Accuracy** | [Insert your Accuracy from evaluate.py]% |
-| **F1-Score** | [Insert your F1-Score] |
-| **Precision** | [Insert your Precision] |
-| **Recall** | [Insert your Recall] |
+<img width="608" height="301" alt="image" src="https://github.com/user-attachments/assets/6bbe8146-d6ac-406a-9c21-b41bad7d4b26" />
+
 
 ### Confusion Matrix
 The following matrix illustrates the model's ability to distinguish between classes:
-![Confusion Matrix](final_confusion_matrix.png)
+![Confusion Matrix](<img width="850" height="704" alt="image" src="https://github.com/user-attachments/assets/0f927043-81ff-428d-941e-e962049f4278" />
+)
 
 ---
 
 ## 📂 Project Structure
-* **`app.py`**: Main application logic.
+* **`app.py`**: Handles the heavy lifting: loading CSVs, cleaning text with preprocessing_text, and initiating the 10-hour training via bert_training.
+* **`main.py`**:The lightweight Streamlit app that users interact with. It loads the checkpoint-13470 and provides the "Analyze" button.
 * **`evaluate.py`**: Script for generating metrics and identifying misclassifications.
 * **`predict.py`**: CLI tool for testing individual headlines.
 * **`preprocessing.py`**: Logic for tokenization and dataset cleaning.
