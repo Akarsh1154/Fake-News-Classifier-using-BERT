@@ -1,0 +1,8 @@
+# Ignore everything that isn't code
+News_dataset/
+processed_news_data/
+results/
+tmp_trainer/
+__pycache__/
+*.png
+*.csv
